@@ -1,0 +1,11 @@
+<h1>Carros</h1>
+<ul>
+    <li *ngFor="let carro of carros">
+        {{carro.marca}} - {{carro.modelo}} - {{carro.color}}
+        <div *ngIf="carro.color == 'Verde'">
+            <h3>Este carro es Verde</h3>
+        </div>
+
+    </li>
+
+</ul>
